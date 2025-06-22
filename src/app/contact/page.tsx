@@ -45,10 +45,6 @@ export default function Contact() {
           </div>
 
         </section>
-
-
-
-
         <main className="flex-grow flex flex-col max-w-2xl mx-auto pt-20 pb-32 px-8">
           <div className="select-content p-8 rounded-2xl shadow-lg w-full">
             <h1 className="text-5xl font-semibold mb-6">

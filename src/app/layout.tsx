@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Frans Erhart Portfolio",
+  title: "Frans Erhart - Portfolio",
   description: "Portfolio showcasing Frans Erhart's game development projects and skills",
   icons: {
     icon: [
