@@ -1,6 +1,17 @@
 import Navbar from "@/Components/NavBar";
 import Image from "next/image";
 import Footer from "@/Components/Footer";
+import {SiUnity, SiGithub,  SiTailwindcss, SiBlender, SiDotnet,SiHtml5, SiCss3 } from 'react-icons/si';
+
+const techIcons: { [key: string]: React.JSX.Element } = {
+  "Unity": <SiUnity className="text-white text-lg mr-2" />,
+  "GitHub": <SiGithub className="text-gray-800 text-lg mr-2" />,
+  "HTML5": <SiHtml5 className="text-orange-500 text-lg mr-2" />,
+  "CSS3": <SiCss3 className="text-blue-500 text-lg mr-2" />,
+  "Tailwind CSS": <SiTailwindcss className="text-blue-500 text-lg mr-2" />,
+  "C#": <SiDotnet className="text-purple-600 text-lg mr-2" />,
+  "Blender": <SiBlender className="text-orange-600 text-lg mr-2" />,
+};
 
 export default function About() {
   return (
@@ -37,30 +48,27 @@ export default function About() {
 
         {/* Skills Section */}
         <section className="mt-12 max-w-3xl text-center pt-bottom">
-          <h2 className="text-3xl font-semibold mb-6">Skills</h2>          <div className="flex flex-wrap justify-center gap-4">
+          <h2 className="text-3xl font-semibold mb-6">Skills</h2>
+          <div className="flex flex-wrap justify-center gap-4">
             <div className="flex items-center space-x-2 bg-gray-800 px-4 py-2 rounded-full shadow-md">
-              <Image src="/Img/CSharpLogo.png" alt="C#" width={24} height={24} />
+              <SiDotnet className="text-purple-600 text-2xl" />
               <span>C#</span>
             </div>
             <div className="flex items-center space-x-2 bg-gray-800 px-4 py-2 rounded-full shadow-md">
-              <Image src="/Img/UnityLogo.png" alt="Unity" width={24} height={24} />
+              <SiUnity className="text-white text-2xl" />
               <span>Unity</span>
             </div>
             <div className="flex items-center space-x-2 bg-gray-800 px-4 py-2 rounded-full shadow-md">
-              <Image src="/Img/GitIcon.png" alt="Git" width={24} height={24} />
-              <span>Git</span>
+              <SiGithub className="text-gray-300 text-2xl" />
+              <span>GitHub</span>
             </div>
             <div className="flex items-center space-x-2 bg-gray-800 px-4 py-2 rounded-full shadow-md">
-              <Image src="/Img/HTML5.png" alt="HTML5" width={24} height={24} />
+              <SiHtml5 className="text-orange-500 text-2xl" />
               <span>HTML5</span>
             </div>
             <div className="flex items-center space-x-2 bg-gray-800 px-4 py-2 rounded-full shadow-md">
-              <Image src="/Img/CSS.png" alt="CSS" width={24} height={24} />
+              <SiCss3 className="text-blue-500 text-2xl" />
               <span>CSS</span>
-            </div>
-            <div className="flex items-center space-x-2 bg-gray-800 px-4 py-2 rounded-full shadow-md">
-              <Image src="/Img/Github.png" alt="Github" width={24} height={24} />
-              <span>Github</span>
             </div>
           </div>
         </section>
