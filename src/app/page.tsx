@@ -11,9 +11,9 @@ export default function Home() {
           Netherlands based game developer
         </h2>
       </div>      <div className="cardsContainer">
-            <Card title="About" description="All the necessary info about me, you can find here." img="/img/frans.jpg" hreftitle="About Me" href="/about" />
-            <Card title="Projects" description="You can find some of my best work on this page." img="/img/ProjectPage.png" hreftitle="Projects" href="/projects"/>
-           {/* <Card title="Contact" description="Wanna reach me? Find my contact info here!" img="/img/contact2.jpg" hreftitle="Contact" href="/contact"/> */}
+            <Card title="About" description="All the necessary info about me, you can find here." img="/Img/frans.jpg" hreftitle="About Me" href="/about" />
+            <Card title="Projects" description="You can find some of my best work on this page." img="/Img/ProjectPage.png" hreftitle="Projects" href="/projects"/>
+           {/* <Card title="Contact" description="Wanna reach me? Find my contact info here!" img="/Img/contact2.jpg" hreftitle="Contact" href="/contact"/> */}
       </div>
     </main>
   );

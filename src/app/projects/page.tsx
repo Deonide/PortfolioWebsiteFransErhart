@@ -51,14 +51,13 @@ function ProjectsContent() {
             onModalStateChange={handleModalStateChange}
         />
           */}
-          
-          <ProjectCard 
+            <ProjectCard 
             projectId="RogueLikeCardGame"
             media={[
-              { type: 'image', src: "/img/RogueLikeCardGame/InGame.png", alt: "In Game Screen" },
-              { type: 'image', src: "/img/RogueLikeCardGame/WinScreen.png", alt: "Win screen" },
-              { type: 'image', src: "/img/RogueLikeCardGame/CardSelection.png", alt: "Card selection" },
-              { type: 'image', src: "/img/RogueLikeCardGame/Shop.png", alt: "Shop" },
+              { type: 'image', src: "/Img/RogueLikeCardGame/InGame.png", alt: "In Game Screen" },
+              { type: 'image', src: "/Img/RogueLikeCardGame/WinScreen.png", alt: "Win screen" },
+              { type: 'image', src: "/Img/RogueLikeCardGame/CardSelection.png", alt: "Card selection" },
+              { type: 'image', src: "/Img/RogueLikeCardGame/Shop.png", alt: "Shop" },
             ]}
             title="Roguelike Card Game" 
             techStack={["C#", "Unity"]} 
@@ -250,12 +249,11 @@ private void UpdateCardData(GameObject game, Card cardData)
           <ProjectCard
             projectId="Shaders"
             title="Shader practice"
-            techStack={["Unity"]}
-            media={[              
-              { type: 'image', src: "/img/Shaders/ShaderVisuals.png", alt: "Shader Visuals" },
-              { type: 'image', src: "/img/Shaders/Color.png", alt: "Shader Graph" },
-              { type: 'image', src: "/img/Shaders/Dither.png", alt: "Shader Graph 2" },
-              { type: 'image', src: "/img/Shaders/Base.png", alt: "Shader Graph 3" },
+            techStack={["Unity"]}            media={[              
+              { type: 'image', src: "/Img/Shaders/ShaderVisuals.png", alt: "Shader Visuals" },
+              { type: 'image', src: "/Img/Shaders/Color.png", alt: "Shader Graph" },
+              { type: 'image', src: "/Img/Shaders/Dither.png", alt: "Shader Graph 2" },
+              { type: 'image', src: "/Img/Shaders/Base.png", alt: "Shader Graph 3" },
             ]}
             coverImage=""
             description="Some Shaders"
@@ -273,12 +271,11 @@ private void UpdateCardData(GameObject game, Card cardData)
             onModalStateChange={handleModalStateChange}
         />
           <ProjectCard 
-            projectId="TridentPop"
-            media={[
-              { type: 'image', src: "/img/TridentPop/Icon.png", alt: "Project thumbnail" },
-              { type: 'image', src: "/img/TridentPop/MainMenu.png", alt: "Main Menu" },
-              { type: 'image', src: "/img/TridentPop/BossBubble.png", alt: "Boss Bubble" },
-              { type: 'image', src: "/img/TridentPop/InGame.png", alt: "In Game" },
+            projectId="TridentPop"            media={[
+              { type: 'image', src: "/Img/TridentPop/Icon.png", alt: "Project thumbnail" },
+              { type: 'image', src: "/Img/TridentPop/MainMenu.png", alt: "Main Menu" },
+              { type: 'image', src: "/Img/TridentPop/BossBubble.png", alt: "Boss Bubble" },
+              { type: 'image', src: "/Img/TridentPop/InGame.png", alt: "In Game" },
             ]}
             title="Trident Pop" 
             techStack={["C#", "Unity", "Blender"]} 
@@ -406,10 +403,9 @@ private void UpdateCardData(GameObject game, Card cardData)
           />
 
           <ProjectCard 
-            projectId="Asteroids3D"
-            media={[
-              { type: 'image', src: "/img/Asteroids3D/MainMenu.webp", alt: "Main Menu" },
-              { type: 'image', src: "/img/Asteroids3D/InGame.webp", alt: "In Game" },              
+            projectId="Asteroids3D"            media={[
+              { type: 'image', src: "/Img/Asteroids3D/MainMenu.webp", alt: "Main Menu" },
+              { type: 'image', src: "/Img/Asteroids3D/InGame.webp", alt: "In Game" },              
             ]}
             title="Asteroids 3D" 
             techStack={["C#", "Unity"]} 
