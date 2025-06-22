@@ -1,16 +1,14 @@
 import Navbar from "@/Components/NavBar";
 import Image from "next/image";
 import Footer from "@/Components/Footer";
-import {SiUnity, SiGithub,  SiTailwindcss, SiBlender, SiDotnet,SiHtml5, SiCss3 } from 'react-icons/si';
+import {SiUnity, SiGithub, SiDotnet,SiHtml5, SiCss3 } from 'react-icons/si';
 
 const techIcons: { [key: string]: React.JSX.Element } = {
   "Unity": <SiUnity className="text-white text-lg mr-2" />,
   "GitHub": <SiGithub className="text-gray-800 text-lg mr-2" />,
   "HTML5": <SiHtml5 className="text-orange-500 text-lg mr-2" />,
   "CSS3": <SiCss3 className="text-blue-500 text-lg mr-2" />,
-  "Tailwind CSS": <SiTailwindcss className="text-blue-500 text-lg mr-2" />,
   "C#": <SiDotnet className="text-purple-600 text-lg mr-2" />,
-  "Blender": <SiBlender className="text-orange-600 text-lg mr-2" />,
 };
 
 export default function About() {
