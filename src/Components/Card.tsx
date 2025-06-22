@@ -4,13 +4,11 @@ export default function Card({
   title, 
   description, 
   img, 
-  hreftitle, 
   href 
 }: { 
   title: string; 
   description: string; 
   img: string; 
-  hreftitle: string; 
   href: string; 
 }) {
   return (

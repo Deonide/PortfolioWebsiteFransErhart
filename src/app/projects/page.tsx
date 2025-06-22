@@ -2,15 +2,11 @@
 import { useState, useEffect } from "react";
 import Navbar from "@/Components/NavBar"; 
 import ProjectCard from "@/Components/projectCard";
-import Image from "next/image";
 export default function Projects() {
-  const [backgroundAttachment, setBackgroundAttachment] = useState("fixed");
   const [isAnyModalOpen, setIsAnyModalOpen] = useState(false);
 
   useEffect(() => {
-    if (window.innerWidth < 768) {
-      setBackgroundAttachment("scroll");
-    }
+    // Mobile detection logic can be added here if needed in the future
   }, []);
 
   // Handle modal state changes from the ProjectCard component
