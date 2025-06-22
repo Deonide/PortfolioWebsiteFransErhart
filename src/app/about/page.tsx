@@ -1,13 +1,15 @@
 import Navbar from "@/Components/NavBar";
 import Image from "next/image";
+import Footer from "@/Components/Footer";
 
 export default function About() {
   return (
     <div className="bg-gray-900 text-white min-h-screen">
       <Navbar />
-      <main className="flex flex-col items-center pt-24 px-6">
+      <main className="flex flex-col items-center pt-24 px-6 pb-24">
         {/* Profile Section */}
-        <div className="flex flex-col items-center text-center space-y-6">          <Image
+        <div className="flex flex-col items-center text-center space-y-6">          
+          <Image
             className="rounded-full border-4 border-gray-700 shadow-lg"
             src="/Img/frans.jpg"
             alt="Frans Erhart"
@@ -56,9 +58,14 @@ export default function About() {
               <Image src="/Img/CSS.png" alt="CSS" width={24} height={24} />
               <span>CSS</span>
             </div>
+            <div className="flex items-center space-x-2 bg-gray-800 px-4 py-2 rounded-full shadow-md">
+              <Image src="/Img/Github.png" alt="Github" width={24} height={24} />
+              <span>Github</span>
+            </div>
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   );
 }
