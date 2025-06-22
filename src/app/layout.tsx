@@ -21,12 +21,10 @@ export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
-  return (
+}>) {  return (
     <html lang="en">
-      <body className="bg-black text-white">
+      <body className={`${geistSans.variable} ${geistMono.variable} bg-black text-white`}>
         {children}
-
       </body>
     </html>
   );

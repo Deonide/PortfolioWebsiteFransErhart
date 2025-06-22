@@ -1,5 +1,4 @@
-import Navbar from "@/Components/NavBar"; 
-import { Section } from "lucide-react";
+import Navbar from "@/Components/NavBar";
 
 
 
@@ -9,11 +8,11 @@ export default function Contact() {
       <div>
         <Navbar />
 
-        <Section id="contactus">
+        <section id="contactus">
           <div className="contactus-left">
             <div className="contactus-left-top">
               <p><span>-</span> Contact Me</p>
-              <p>Let's<span>Connect</span> & <br/> <span>Collaborate</span></p>
+              <p>Let&apos;s<span>Connect</span> & <br/> <span>Collaborate</span></p>
             </div>
 
             <p className="contactus-left-mid">
@@ -45,7 +44,7 @@ export default function Contact() {
             </a>
           </div>
 
-        </Section>
+        </section>
 
 
 

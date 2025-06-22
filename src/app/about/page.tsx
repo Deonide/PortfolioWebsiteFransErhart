@@ -1,6 +1,5 @@
 import Navbar from "@/Components/NavBar";
 import Image from "next/image";
-import AgeDisplay from "@/Components/AgeDisplay";
 
 export default function About() {
   return (

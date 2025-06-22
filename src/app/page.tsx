@@ -2,7 +2,7 @@ import Card from "@/Components/Card";
 
 export default function Home() {
   return (
-    <main className= "flex flex-col gap-5 p-10">
+    <main className="flex flex-col gap-5 p-10">
       <div>
         <h1 className="name BrownColor">
           Frans Erhart
@@ -10,9 +10,8 @@ export default function Home() {
         <h2 className="description LightColor">
           Netherlands based game developer
         </h2>
-      </div>
-      <div className= " cardsContainer" >
-            <Card title="About" description="All the necessary info about me, you can find here." img="/img/frans.jpg" hreftitle="About Me" href="/about"/ >
+      </div>      <div className="cardsContainer">
+            <Card title="About" description="All the necessary info about me, you can find here." img="/img/frans.jpg" hreftitle="About Me" href="/about" />
             <Card title="Projects" description="You can find some of my best work on this page." img="/img/ProjectPage.png" hreftitle="Projects" href="/projects"/>
            {/* <Card title="Contact" description="Wanna reach me? Find my contact info here!" img="/img/contact2.jpg" hreftitle="Contact" href="/contact"/> */}
       </div>

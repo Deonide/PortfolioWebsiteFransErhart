@@ -1,10 +1,10 @@
 import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
 
-export default {
-  content: [
-    "./src/pages//*.{js,ts,jsx,tsx,mdx}",
-    "./src/components//.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/.{js,ts,jsx,tsx,mdx}",
+export default {  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/Components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -13,9 +13,8 @@ export default {
         foreground: "var(--foreground)",
       },
     },
-  },
-  plugins: [
-    function({ addUtilities }: { addUtilities: (utilities: Record<string, { [key: string]: string | number }>) => void }) {
+  },  plugins: [
+    plugin(function({ addUtilities }) {
       const newUtilities = {
         '.font-light-antialiased': {
           'font-weight': '300',
@@ -36,6 +35,6 @@ export default {
         },
       }
       addUtilities(newUtilities);
-    }
+    })
   ],
 } satisfies Config;
