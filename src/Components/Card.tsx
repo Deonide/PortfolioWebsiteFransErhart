@@ -4,15 +4,16 @@ export default function Card({
   title, 
   description, 
   img, 
+  hreftitle, 
   href 
 }: { 
   title: string; 
   description: string; 
   img: string; 
+  hreftitle: string; 
   href: string; 
-}) {
-  return (
-    <Link href={href} className="group">
+}) {  return (
+    <Link href={href} className="group" title={hreftitle}>
       <div 
         className="relative shadow-lg rounded-2xl p-5 border border-gray-200 cardSize 
                    transition-transform transform hover:scale-105 hover:shadow-xl 
