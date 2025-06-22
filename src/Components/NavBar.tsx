@@ -33,7 +33,6 @@ const Navbar = () => {
         <div className="md:hidden bg-black/90 backdrop-blur-md flex flex-col items-center space-y-4 py-4">
           <NavLink href="/about" icon={<User size={20} />} onClick={() => setIsOpen(false)}>About</NavLink>
           <NavLink href="/projects" icon={<Folder size={20} />} onClick={() => setIsOpen(false)}>Projects</NavLink>
-          <NavLink href="/contact" icon={<Mail size={20} />} onClick={() => setIsOpen(false)}>Contact</NavLink>
         </div>
       )}
     </nav>
