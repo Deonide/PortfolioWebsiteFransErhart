@@ -1,8 +1,9 @@
 'use client';
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import Navbar from "@/Components/NavBar"; 
 import ProjectCard from "@/Components/projectCard";
-export default function Projects() {
+
+function ProjectsContent() {
   const [isAnyModalOpen, setIsAnyModalOpen] = useState(false);
 
   useEffect(() => {
@@ -517,8 +518,15 @@ private void UpdateCardData(GameObject game, Card cardData)
         className={`fixed bottom-0 left-0 w-full z-10 transition-all duration-300 ease-in-out ${
           isAnyModalOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'
         }`}
-      >
-      </div>
+      >      </div>
     </div>
+  );
+}
+
+export default function Projects() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ProjectsContent />
+    </Suspense>
   );
 }
