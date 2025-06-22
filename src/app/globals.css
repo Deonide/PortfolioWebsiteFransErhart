@@ -29,6 +29,11 @@
     
   }
   
+  .footerColors{
+    background-color: #000000;
+    color: #169976;
+  }
+
   .LightColor{
     color: #FDFFFE;
   }

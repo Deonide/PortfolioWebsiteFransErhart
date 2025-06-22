@@ -2,6 +2,7 @@
 import { useState, useEffect, Suspense } from "react";
 import Navbar from "@/Components/NavBar"; 
 import ProjectCard from "@/Components/projectCard";
+import Footer from "@/Components/Footer";
 
 function ProjectsContent() {
   const [isAnyModalOpen, setIsAnyModalOpen] = useState(false);
@@ -515,6 +516,7 @@ private void UpdateCardData(GameObject game, Card cardData)
           isAnyModalOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'
         }`}
       >      </div>
+      <Footer />
     </div>
   );
 }
