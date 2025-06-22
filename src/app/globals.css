@@ -1,26 +1,264 @@
 @import "tailwindcss";
+@media(min-width: 1px){
+  .name
+  {
+    text-align: center;
+    font-size: 40px;
+  }
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  .description
+  {
+    margin: 5px;
+    text-align: center;
+    font-size: 25px;
+  }
+  
+  body {
+    background: var(--color-gray-900);
+    color: var(--foreground);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .NavbarColors{
+    background-color: #000000;
+    color: #169976;
+  }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  .BrownColor{
+    color: #169976;
+    
+  }
+  
+  .LightColor{
+    color: #FDFFFE;
+  }
 
-@media (prefers-color-scheme: dark) {
+  .pt-bottom{
+    padding-bottom: 50px;
+  }
+
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #222222;
+    --foreground: #171717;
+  }
+  
+  /* -------------------------------- 
+
+Icons 
+
+-------------------------------- */
+
+.cd-icon {
+  --size: 1em;
+  font-size: var(--size);
+  height: 1em;
+  width: 1em;
+  display: inline-block;
+  color: inherit;
+  fill: currentColor;
+  line-height: 1;
+  flex-shrink: 0;
+  max-width: initial;
+}
+
+/* -------------------------------- 
+
+Component 
+
+-------------------------------- */
+
+.chip {
+  border: 0;
+  color: inherit;
+  line-height: 1;
+  -webkit-appearance: none;
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 50em;
+  padding: 0.25rem;
+  background-color: hsla(167, 79%, 39%, 0.517);
+  font-size: 0.9375rem;
+}
+
+.chiplabel {
+  padding: 0 0.5rem;
+  color: white;
+}
+
+.chipimg {
+  display: block;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.cd-demo-chip-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+
+  @theme inline {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: #222222;
+      --foreground: #1DCD9F;
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@media(max-width: 768px) {
+  /* Mobile */
+  /* Homepage */
+  .cardSize 
+  {
+    gap: 1.5rem;
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 35px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .cardsContainer 
+  {
+    gap: 1.5rem;
+    width: 100%;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+  }
+
+  /* About me*/
+  .image-Holder
+  {
+    width: 100%;
+    display: block;
+  }
+
+  .text-Holder{
+    padding-top: 20px;
+  }
+}
+
+@media(min-width: 768px) {
+
+  .page-container
+  {
+      width: 80%;
+      margin: auto;
+  }
+
+  .cardSize 
+  {
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-top: 75px;
+    padding-right: 30px;
+    padding-bottom: 75px;
+    transition: all 0.3s ease;
+  }
+  
+  .cardsContainer 
+  {
+    @apply flex justify-center;
+    display: flex;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+  }
+}
+
+/* --------------------------------
+  Contact Me
+-------------------------------- */
+
+        .email-container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px 40px;
+        }
+
+        .header{
+            width: 100%;
+            margin-bottom: 5px;
+        }
+
+        .header .logo img{
+            width: 45px;
+            float: left;
+        }
+
+        .header .link-to-website{
+            float: right;
+            font-size: 14px;
+            margin-top: 25px;
+        }
+
+        .hero-content img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .content .title{
+            font-weight: 600;
+            font-size: 22px;
+            color: #333;
+        }
+
+        .content p{
+            margin-bottom: 15px;
+            line-height: 1.5;
+            font-size: 14px;
+            text-align: center;
+            color: grey;
+        }
+
+        .signature{
+            margin-bottom: 15px;
+            margin-top: 22px;
+            border-bottom: 1px solid gainsboro;
+            padding-bottom: 20px;
+            text-align: center;
+            color: gray;
+        }
+
+        .social-container{
+            text-align: center;
+        }
+
+        .social-container img{
+            width: 25px;
+        }
+
+
+/* --------------------------------
+  Contact Form
+-------------------------------- */
+#contactus
+{
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+
 }
