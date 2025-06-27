@@ -261,7 +261,7 @@ private void UpdateCardData(GameObject game, Card cardData)
             features={[
                 {
                   title: "Learning to work with shadergraphs", 
-                  description: "While working on this project i learned a little bit about working with shadergraphs in Unity. I made a couple of different shaders to learn how to use them.",
+                  description: "While working on this project i learned a little bit about working with shadergraphs in Unity. I made a couple of different shaders to learn how to use them. Like: a Dither shader, a color shader, a emission shader and a basic lighting shader.",
 
                 },
 

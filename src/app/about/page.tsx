@@ -24,7 +24,7 @@ export default function About() {
         <section className="mt-12 max-w-3xl text-center">
           <h2 className="text-3xl font-semibold mb-4">About Me</h2>
           <p className="text-lg text-gray-300 leading-relaxed">
-            My name is Frans Erhart, a developer currently studying at Grafisch Lyceum Utrecht. I enjoy creating entertaining games and exploring new technologies.
+            My name is Frans Erhart, a developer currently studying at Grafisch Lyceum Utrecht. I enjoy creating games and exploring new technologies.
           </p>
         </section>
 
