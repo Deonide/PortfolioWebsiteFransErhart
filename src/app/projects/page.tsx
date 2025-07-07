@@ -443,13 +443,19 @@ private void UpdateCardData(GameObject game, Card cardData)
             features={[
                 {
                   title: "Learning to work with shadergraphs", 
-                  description: "While working on this project I learned a little bit about working with shadergraphs in Unity. I made a couple of different shaders to learn how to use them. Like: a Dither shader, a color shader, a emission shader and a basic lighting shader.",
+                  description: "While working on this project I learned a little bit about working with shadergraphs in Unity. I made a couple of different shaders to learn how to use them. Like: a Dither shader, a color shader, an emission shader and a basic lighting shader.",
                 },
                 {
                   title:" Dither Shader",
                   description:"This shader uses a dither effect to create a pixelated look. It can be used to create a retro style or to reduce the number of colors in an image.",
                 },
-
+                {
+                  title:"Color Shader",
+                  description:"A basic color shader.",
+                },
+                {
+                  title:"Emission Shader",
+                  description:"An emission shader is a type of material shader used in 3d graphics that makes an object appear as if its emits light. The material also doesnt reflect or respond to lighting in the scene like other materials instead, it looks self-illuminated.",                },
             ]}
 
             liveLink=""
