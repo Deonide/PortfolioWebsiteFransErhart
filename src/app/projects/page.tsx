@@ -592,7 +592,7 @@ private void UpdateCardData(GameObject game, Card cardData)
                 description: "Shoot the floating asteroids to gain points. But watch out they will split into 2 pieces when you destroy them!",
                 codeSnippet: {
                   language: "csharp", 
-                  title:"Loot reward Code Snippet", 
+                  title:"Splitting Asteroids", 
                   code:`private void OnCollisionEnter(Collision collision)
 {
     if (collision.gameObject.tag == "bullet")
