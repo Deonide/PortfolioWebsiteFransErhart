@@ -1,7 +1,8 @@
 import Navbar from "@/Components/NavBar";
 import Image from "next/image";
 import Footer from "@/Components/Footer";
-import {SiUnity, SiGithub, SiDotnet,SiHtml5, SiCss3 } from 'react-icons/si';
+import { FaFile} from "react-icons/fa";
+import {SiUnity, SiDotnet,SiHtml5, SiCss3, SiGit, SiLinkedin, SiMaildotru} from 'react-icons/si';
 
 export default function About() {
   return (
@@ -37,7 +38,7 @@ export default function About() {
         </section>
 
         {/* Skills Section */}
-        <section className="mt-12 max-w-3xl text-center pt-bottom">
+        <section className="mt-12 max-w-3xl text-center">
           <h2 className="text-3xl font-semibold mb-6">Skills</h2>
           <div className="flex flex-wrap justify-center gap-4">
             <div className="flex items-center space-x-2 bg-gray-800 px-4 py-2 rounded-full shadow-md">
@@ -49,8 +50,8 @@ export default function About() {
               <span>Unity</span>
             </div>
             <div className="flex items-center space-x-2 bg-gray-800 px-4 py-2 rounded-full shadow-md">
-              <SiGithub className="text-gray-300 text-2xl" />
-              <span>GitHub</span>
+              <SiGit className="text-gray-300 text-2xl" />
+              <span>Git</span>
             </div>
             <div className="flex items-center space-x-2 bg-gray-800 px-4 py-2 rounded-full shadow-md">
               <SiHtml5 className="text-orange-500 text-2xl" />
@@ -60,6 +61,24 @@ export default function About() {
               <SiCss3 className="text-blue-500 text-2xl" />
               <span>CSS</span>
             </div>
+          </div>
+        </section>
+        <section className="mt-12 max-w-3xl text-center pt-bottom">
+          <h2 className="text-3xl font-semibold mb-4">Contact</h2>
+          <div className="flex flex-wrap justify-center gap-4">
+          <a href="https://www.linkedin.com/in/frans-erhart-195319133/" target="_blank"><div className="flex items-center space-x-2 bg-gray-800 px-4 py-2 rounded-full shadow-md">
+              <SiLinkedin className="text-blue-500 text-2xl" />
+              <span>LinkedIn</span>
+            </div></a>
+
+            <a href="mailto:franserhart12@gmail.com" target="_blank"><div className="flex items-center space-x-2 bg-gray-800 px-4 py-2 rounded-full shadow-md">
+              <SiMaildotru className="text-blue-500 text-2xl" />
+              <span>Mail</span>
+            </div></a>
+            <a href="/Frans_Erhart_CV.pdf" target="_blank"><div className="flex items-center space-x-2 bg-gray-800 px-4 py-2 rounded-full shadow-md">
+              <FaFile className="text-blue-500 text-2xl" />
+              <span>CV</span>
+            </div></a>
           </div>
         </section>
       </main>
