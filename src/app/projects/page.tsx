@@ -585,7 +585,7 @@ private void UpdateCardData(GameObject game, Card cardData)
             ]}
             title="Asteroids 3D" 
             techStack={["C#", "Unity"]} 
-            description="The first project i made as a game developer was a 3D clone of the original asteroids game. With some additional features"
+            description="The first project i made as a game developer was a 3D clone of the original asteroids game. With some additional features."
             features={[
               {
                 title: "Shoot Asteroids",
